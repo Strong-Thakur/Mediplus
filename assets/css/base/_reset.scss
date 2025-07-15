@@ -1,0 +1,103 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+// Margin & Padding
+@for $i from 1 through 12 {
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: $i * 10px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+}
+
+//Background CSS
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 4;
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.2;
+    z-index: -1;
+  }
+}
+
+// Flex
+$flex: flex;
+@each $var in $flex {
+  .d-#{$var} {
+    display: flex;
+  }
+}
+// Justify Content
+$justify: start, center, end, space-around, space-between, space-evenly;
+@each $var in $justify {
+  .justify-#{$var} {
+    justify-content: $var;
+  }
+}
+
+// Align Items
+$aligns_items: start, center, end, space-around, space-between, space-evenly;
+@each $var in $aligns_items {
+  .align-#{$var} {
+    align-items: $var;
+  }
+}
+
+// Button CSS
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  display: inline-block;
+  border-radius: 50px;
+  &.btn-box {
+    background-color: $blue;
+    color: $white;
+  }
+  &.btn-tomato {
+    background-color: $tomato;
+    color: $white;
+  }
+  &.btn-white {
+    background-color: $white;
+    color: $black;
+    padding: 15px 20px;
+  }
+}
+
+// NO Gutter
+.no-gutter {
+  padding: 0 !important;
+}

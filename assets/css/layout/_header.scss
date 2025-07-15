@@ -1,0 +1,127 @@
+.header-area {
+  padding: 20px 0;
+  transition: 0.3s;
+  @include max-xs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 0 12px 0;
+    z-index: 999;
+    background-color: $white;
+    width: 100%;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background-color: $white;
+  }
+  .logo {
+    padding-top: 10px;
+
+    @include min-sm {
+      padding: 0;
+    }
+    @include min-md {
+      padding: 0;
+    }
+    a {
+      display: block;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .header-menu {
+    @include max-xs {
+      display: none;
+    }
+    @include min-sm {
+      display: none;
+    }
+    @include min-md {
+      display: none;
+    }
+    ul {
+      align-items: center;
+      li {
+        margin-left: 20px;
+        a {
+          display: inline-block;
+          text-transform: capitalize;
+          color: $black;
+          font-size: 18px;
+          transition: 0.3s;
+          &:hover {
+            color: $blue;
+          }
+        }
+        &.ap-box {
+          padding: 10px 20px;
+          background-color: $tomato;
+          border-radius: 5px;
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slicknav_menu {
+  display: none;
+  @include max-xs {
+    display: block;
+    position: fixed;
+    top: -5px;
+    right: 0;
+    z-index: 9999;
+    background-color: transparent;
+    width: 100%;
+    .slicknav_nav {
+      background-color: $black;
+      li {
+        a {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  @include min-sm {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 72px;
+    z-index: 999;
+    background-color: transparent;
+    width: 85%;
+    .slicknav_nav {
+      background-color: $black;
+      li {
+        a {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  @include min-md {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 72px;
+    z-index: 999;
+    background-color: transparent;
+    width: 85%;
+    .slicknav_nav {
+      background-color: $black;
+      padding: 20px 0;
+      li {
+        a {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

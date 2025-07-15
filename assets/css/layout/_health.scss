@@ -1,0 +1,38 @@
+.health-area {
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include max-xs {
+    padding: 0;
+  }
+  .health-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    h4 {
+      text-transform: capitalize;
+      font-size: 60px;
+      font-weight: 600;
+      color: $white;
+      @include max-xs {
+        font-size: 25px;
+        text-align: center;
+      }
+      @include min-sm {
+        font-size: 30px;
+      }
+      @include min-md {
+        font-size: 48px;
+      }
+    }
+    p {
+      margin: 30px 0 20px 0;
+      color: $white;
+      @include max-xs {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.blog-area {
+  .single-blog {
+    margin-bottom: 50px;
+    img {
+      width: 100%;
+    }
+    ul {
+      li {
+        margin-right: 10px;
+        a {
+          color: $tomato;
+          display: block;
+          margin: 20px 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+    h4 {
+      text-transform: capitalize;
+      margin: 20px 0;
+      @include min-md {
+        font-size: 20px;
+      }
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+}

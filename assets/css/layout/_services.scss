@@ -1,0 +1,83 @@
+.service-area {
+  background-color: $gray;
+  .service-title {
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 100px;
+  }
+  .service {
+    padding: 60px 0;
+    .single-services {
+      display: flex;
+      margin-bottom: 25px;
+      @include max-xs {
+        padding: 0 20px;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      .service-content {
+        margin-left: 18px;
+        h4 {
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+        p {
+          margin: 10px 0;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .service-contact {
+    background-color: $white;
+    padding: 20px;
+    h4 {
+      text-transform: uppercase;
+      color: $blue;
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+    form {
+      input {
+        width: 100%;
+        padding: 10px 20px;
+        text-transform: capitalize;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+        border: 1px solid $gray;
+        color: $gray;
+        @include min-sm {
+          color: $black;
+        }
+        @include min-md {
+          color: $black;
+        }
+      }
+      textarea {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+        color: #ddd;
+        text-transform: capitalize;
+        border: 1px solid $gray;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: $tomato;
+        color: $white;
+        padding: 10px 0;
+        margin-top: 10px;
+        cursor: pointer;
+        border: 1px solid $tomato;
+        @include min-md {
+          width: auto;
+          padding: 15px 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.top-area {
+  background-color: $blue;
+  @include max-xs {
+    display: none;
+  }
+  @include min-sm {
+    display: none;
+  }
+  @include min-md {
+    display: none;
+  }
+  .top-phone {
+    a {
+      color: $white;
+      @include min-md {
+        font-size: 15px;
+      }
+      i {
+        color: $white;
+        margin-right: 5px;
+        @include min-md {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .top-email {
+    a {
+      color: $white;
+      @include min-md {
+        font-size: 15px;
+      }
+      i {
+        color: $white;
+        margin-right: 5px;
+        @include min-md {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .sign-content {
+    a {
+      color: $white;
+      text-transform: uppercase;
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      padding: 0 10px;
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}

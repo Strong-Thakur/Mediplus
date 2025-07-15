@@ -1,0 +1,21 @@
+.banner-area {
+  .banner-content {
+    h5 {
+      text-transform: uppercase;
+      color: $blue;
+      font-size: 16px;
+    }
+    h4 {
+      font-size: 50px;
+      font-weight: 600;
+      color: $black;
+      text-transform: capitalize;
+      line-height: 50px;
+      margin: 20px 0;
+    }
+    p {
+      margin: 10px 0;
+      line-height: 30px;
+    }
+  }
+}

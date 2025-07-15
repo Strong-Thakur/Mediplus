@@ -1,0 +1,25 @@
+.about-area {
+  .about-content {
+    padding: 45px 0;
+    @include min-lg {
+      padding: 0;
+    }
+    h4 {
+      font-size: 50px;
+      color: $black;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 55px;
+      @include max-xs {
+        font-size: 40px;
+      }
+      span {
+        color: $blue;
+      }
+    }
+    p {
+      line-height: 30px;
+      margin: 20px 0;
+    }
+  }
+}
